@@ -1,0 +1,37 @@
+
+run Scala 2.11.7 in Netbeans 8.1, Ubuntu 14.04
+
+commandline:
+------------
+
+check for java 
+$ java -version
+=> java version "1.8.0_60"
+
+check for scala
+$ scala -version
+=> Scala code runner version 2.11.7
+
+
+Netbeans:
+---------
+
+install Scala plugins:
+Tools/Plugin and choose all Scala Plugins
+
+restart Netbeans so that .scala files are not "unrecognized files".
+
+create Scala project:
+File/New Project/Maven/Project from Archetype/maven-archetype-scala-executable  
+
+change Scala version in pom.xml (group-id org.scala-lang):
+2.9.1 => 2.11.7
+
+clean and build project
+
+right click App.scala file and choose "Run File"
+
+=> Hello World!
+
+will be displayed
+
